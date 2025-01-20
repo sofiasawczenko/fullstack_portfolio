@@ -27,7 +27,6 @@ function App() {
       <Spacer />
       <div>
         <Header />
-        {/* <AboutMe /> */}
         <Experiences />
         <Project />
         <Technologies />

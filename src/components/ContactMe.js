@@ -1,6 +1,5 @@
 import { useEffect } from "react"; 
 import ScrollReveal from "scrollreveal";
-import { GlobalStyle } from '../styles/GlobalStyle';
 
 export const ContactMe = () => {
     useEffect(() => {
