@@ -5,7 +5,6 @@ import { Navbar } from './components/Navbar.js';
 import { theme } from './styles/theme';
 import { Header } from './components/Header.js'
 import { Spacer } from './components/Spacer.js';
-import { AboutMe } from './components/AboutMe.js';
 import { SocialMedia } from './components/SocialMedia.js';
 import { Experiences } from './components/Experiences.js';
 import { Technologies } from './components/Technologies.js';
