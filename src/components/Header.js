@@ -93,7 +93,7 @@ export const Header = () => {
                                     fontSize: 'clamp(1rem, 2.5vw, 1rem)',  
                                     padding: '0.5rem 0.8rem',  
                                     borderRadius: '0.3rem',  
-                                    backgroundColor: 'transparent',  
+                                    backgroundColor: 'transparent',   
                                     textDecoration: 'none', 
                                     transition: 'all 0.3s ease', 
                                 }}
