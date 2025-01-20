@@ -14,7 +14,7 @@ export const ContactMe = () => {
     }, []);
 
     return (
-        <div 
+        <div id="contact"
             className="contact-me py-4 d-flex justify-content-center align-items-center mt-5" 
             style={{
                 minHeight: '40vh', 

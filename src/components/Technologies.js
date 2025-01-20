@@ -6,18 +6,13 @@ const technologies = [
     { name: "React.js", icon: "/images/checkblue.svg" },
     { name: "Styled Components", icon: "/images/checkblue.svg" },
     { name: "Javascript", icon: "/images/checkblue.svg" },
-    { name: "Typescript", icon: "/images/checkblue.svg" },
     { name: "Tailwind CSS", icon: "/images/checkblue.svg" },
     { name: "Bootstrap", icon: "/images/checkblue.svg" },
-    { name: "Next", icon: "/images/checkblue.svg" },
-    { name: "Java 17", icon: "/images/checkblue.svg" },
+    { name: "Java 21", icon: "/images/checkblue.svg" },
     { name: "SQL", icon: "/images/checkblue.svg" },
     { name: "Python", icon: "/images/checkblue.svg" },
-    { name: "R", icon: "/images/checkblue.svg" },
     { name: "Figma", icon: "/images/checkblue.svg" },
     { name: "Git", icon: "/images/checkblue.svg" },
-    { name: "GitHub", icon: "/images/checkblue.svg" },
-    { name: "Agile", icon: "/images/checkblue.svg" },
 ];
 
 export const Technologies = () => {

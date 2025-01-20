@@ -79,7 +79,7 @@ export const Navbar = () => {
                             <a className="nav-link" href="#experiences">Experiências</a>
                         </li> */}
                         <li className="nav-item">
-                            <a className="nav-link" href="#projects">Projetos</a>
+                            <a className="nav-link" href="#experience">Experiência</a>
                         </li>
                          <li className="nav-item">
                             <a className="nav-link" href="#projects">Projetos</a>

@@ -10,70 +10,88 @@ export const Project = () => {
 
     const projects = [
         {
-            id: 1,
-            title: "Projeto Front-End 1",
-            description: "Desenvolvimento de uma interface de usuário utilizando React.",
-            githubUrl: "https://github.com/sofiawko/Front-End-end-project-1",
-            technologies: ["React", "JavaScript", "CSS"],
-            category: "Front-End",
-        },
-        {
             id: 2,
-            title: "Projeto Back-End 1",
-            description: "Desenvolvimento de uma API utilizando Node.js e Express.",
-            githubUrl: "https://github.com/sofiawko/Back-End-end-project-1",
-            technologies: ["Node.js", "Express", "MongoDB"],
+            title: "Carteira de Criptomoeda",
+            description: "Back-end para carteira de criptomoeda com Java e Oracle.",
+            githubUrl: "https://github.com/sofiasawczenko/cripto_wallet",
+            technologies: ["Java", "Maven", "Oracle BD"],
             category: "Back-End",
+            image: require('../assets/images/crypto_wallet.png'),
         },
         {
             id: 3,
-            title: "Projeto de Dados 1",
-            description: "Análise de dados usando Python e Pandas.",
-            githubUrl: "https://github.com/sofiawko/data-project-1",
+            title: "Robô com Visão Computacional",
+            description: "Robô autônomo com visão computacional.",
+            githubUrl: "https://github.com/sofiasawczenko/autonomous_robot_computer_vision",
             technologies: ["Python", "Pandas", "Matplotlib"],
             category: "data",
+            image: require('../assets/images/robot.png'),
         },
         {
             id: 4,
-            title: "Projeto Front-End 2",
-            description: "Interface interativa com animações utilizando React e GSAP.",
-            githubUrl: "https://github.com/sofiawko/Front-End-end-project-2",
-            technologies: ["React", "GSAP", "JavaScript"],
+            title: "Clone Disney+",
+            description: "Clone do Disney+ feito em React.js.",
+            githubUrl: "https://github.com/sofiasawczenko/disney_plus_clone",
+            technologies: ["React.js", "CSS", "JavaScript"],
             category: "Front-End",
+            image: require('../assets/images/disney_clone.png'),
         },
         {
             id: 5,
-            title: "Projeto Back-End 2",
-            description: "Desenvolvimento de microserviços utilizando Spring Boot.",
-            githubUrl: "https://github.com/sofiawko/Back-End-end-project-2",
-            technologies: ["Java", "Spring Boot", "MySQL"],
+            title: "Sudoku Solver",
+            description: "Back-end puro em Java para resolver Sudoku.",
+            githubUrl: "https://github.com/sofiasawczenko/sudoku",
+            technologies: ["Java", "Maven"],
             category: "Back-End",
+            image: require('../assets/images/sudoku.png'),
         },
         {
             id: 6,
-            title: "Projeto de Dados 2",
-            description: "Criação de modelos preditivos com Scikit-Learn.",
-            githubUrl: "https://github.com/sofiawko/data-project-2",
-            technologies: ["Python", "Scikit-Learn", "TensorFlow"],
+            title: "ETL com dados sensíveis",
+            description: "Pipeline ETL usando Google Cloud.",
+            githubUrl: "https://github.com/sofiasawczenko/ETL_employee_info_pipeline",
+            technologies: ["Python", "GCP", "Cloud Storage", "Cloud Data Fusion", "Big Query", "Looker"],
             category: "data",
+            image: require('../assets/images/etl_pipeline.png'),
+        },
+        {
+            id: 1,
+            title: "Assistente Virtual AIVA",
+            description: "Assistente virtual com IA integrado ao navegador.",
+            githubUrl: "https://github.com/sofiasawczenko/aiva_virtual_assistant_ai",
+            technologies: ["JavaScript", "Styled Components, Gemini API"],
+            category: "Front-End",
+            image: require('../assets/images/aiva.png'),
         },
         {
             id: 7,
-            title: "Projeto Front-End 3",
-            description: "Desenvolvimento de uma landing page interativa.",
-            githubUrl: "https://github.com/sofiawko/Front-End-end-project-3",
+            title: "Discovery Skin",
+            description: "Landing page para monitoramento de manchas na pele.",
+            githubUrl: "https://github.com/sofiasawczenko/discovery_skin_app",
             technologies: ["HTML", "CSS", "JavaScript"],
             category: "Front-End",
+            image: require('../assets/images/discovery_skin.png'),
         },
         {
             id: 8,
-            title: "Projeto Back-End 3",
-            description: "Sistema de autenticação e autorização utilizando JWT.",
-            githubUrl: "https://github.com/sofiawko/Back-End-end-project-3",
-            technologies: ["Node.js", "JWT", "MongoDB"],
-            category: "Back-End",
+            title: "My Scheneider App",
+            description: "App para integração de funcionários.",
+            githubUrl: "https://github.com/sofiasawczenko/myschneider_app",
+            technologies: ["HTML", "CSS", "JavaScript"],
+            category: "Front-End",
+            image: require('../assets/images/schneider_app.png'),
+        },
+        {
+            id: 9,
+            title: "Pipeline com estatísta de Cricket",
+            description: "Pipeline de estatísticas de Cricket com Google Cloud.",
+            githubUrl: "https://github.com/sofiasawczenko/ETL_cricket_stats",
+            technologies: ["Python", "Cloud Composer", "Cloud Storage"],
+            category: "data",
+            image: require('../assets/images/cricket_pipeline.png'),
         },
     ];
+    
 
     const filteredProjects = selectedCategory === 'all'
         ? projects
@@ -96,7 +114,7 @@ export const Project = () => {
     }, [filteredProjects]);
 
     return (
-        <Container className="py-5">
+        <Container id="projects" className="py-5">
             <div className="col-12 d-flex justify-content-between align-items-center mb-4">
                 <div>
                     <h2 style={{ color: 'var(--bs-primary)' }} className="fw-bold">
@@ -183,73 +201,75 @@ export const Project = () => {
             </p>
 
             <Row className="justify-content-center g-1">
-                {filteredProjects.slice(0, visibleProjects).map((project) => (
-                    <Col key={project.id} md={4} className="mb-3 d-flex justify-content-center">
-                        <div
-                            className="bg-white project-card d-flex flex-column"
+            {filteredProjects.slice(0, visibleProjects).map((project) => (
+                <Col key={project.id} md={4} className="mb-3 d-flex justify-content-center">
+                    <div
+                        className="bg-white project-card d-flex flex-column"
+                        style={{
+                            width: '100%',
+                            height: '100%',
+                            border: '1px solid #D2D2D2',
+                            borderRadius: '0.5rem',
+                            maxWidth: '100%',
+                            maxHeight: '400px',
+                        }}
+                    >
+                        {/* Imagem do projeto */}
+                        <img
+                            src={project.image}
+                            alt={project.title}
                             style={{
                                 width: '100%',
-                                height: '100%',
-                                border: '1px solid #D2D2D2',
-                                borderRadius: '0.5rem',
-                                maxWidth: '100%',
-                                maxHeight: '400px',
+                                height: '200px',
+                                objectFit: 'cover',
+                                borderTopLeftRadius: '0.5rem',
+                                borderTopRightRadius: '0.5rem',
+                                margin: 0,
                             }}
-                        >
-                            <Card.Img
-                                variant="top"
-                                src={require('../assets/images/flappyBird.png')}
-                                style={{
-                                    width: '100%',
-                                    height: '200px',
-                                    objectFit: 'cover',
-                                    borderTopLeftRadius: '0.5rem',
-                                    borderTopRightRadius: '0.5rem',
-                                    margin: 0,
-                                }}
-                            />
-                            <Card.Body className="p-4">
-                                <div className="d-flex justify-content-between align-items-center mb-3">
-                                    <Card.Title>{project.title}</Card.Title>
-                                    <div className="d-flex">
-                                        <a
-                                            href={project.githubUrl}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="text-dark me-2"
-                                        >
-                                            <img
-                                                src={require('../assets/images/githubCard.png')}
-                                                alt="GitHub"
-                                                width="25"
-                                                height="25"
-                                            />
-                                        </a>
-                                        <a
-                                            href={project.githubUrl}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="text-dark"
-                                        >
-                                            <img
-                                                src={require('../assets/images/open.png')}
-                                                alt="Redirect"
-                                                width="25"
-                                                height="25"
-                                            />
-                                        </a>
-                                    </div>
+                        />
+                        <Card.Body className="p-4">
+                            <div className="d-flex justify-content-between align-items-center mb-3">
+                                <Card.Title>{project.title}</Card.Title>
+                                <div className="d-flex">
+                                    <a
+                                        href={project.githubUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-dark me-2"
+                                    >
+                                        {/* <img
+                                            src={require('../assets/images/githubCard.png')}
+                                            alt="GitHub"
+                                            width="25"
+                                            height="25"
+                                        /> */}
+                                    </a>
+                                    <a
+                                        href={project.githubUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-dark"
+                                    >
+                                        <img
+                                            src={require('../assets/images/open.png')}
+                                            alt="Redirect"
+                                            width="25"
+                                            height="25"
+                                        />
+                                    </a>
                                 </div>
-                                <Card.Text className="mb-3">{project.description}</Card.Text>
-                                <div>
-                                    <strong>Linguagens: </strong>
-                                    {project.technologies.join(', ')}
-                                </div>
-                            </Card.Body>
-                        </div>
-                    </Col>
-                ))}
-            </Row>
+                            </div>
+                            <Card.Text className="mb-3">{project.description}</Card.Text>
+                            <div>
+                                <strong>Linguagens: </strong>
+                                {project.technologies.join(', ')}
+                            </div>
+                        </Card.Body>
+                    </div>
+                </Col>
+            ))}
+        </Row>
+
 
             {filteredProjects.length > visibleProjects && (
                 <div className="text-center mt-4 mb-5">

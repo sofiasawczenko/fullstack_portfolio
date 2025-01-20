@@ -35,7 +35,7 @@ export const Header = () => {
     return (
         <>
             <GlobalStyle />
-            <div className="py-5 vh-100 d-flex justify-content-center align-items-start header-bg">
+            <div className="py-5 vh-100 d-flex justify-content-center align-items-start header-bg" style={{ fontFamily: 'var(--bs-font-family-sans-serif)' }}>
                 {showContent && (
                     <div className="container text-start">
                         <div className="header-element mb-3">
@@ -50,13 +50,13 @@ export const Header = () => {
                         </div>
                         <div className="header-element mb-3 d-flex flex-wrap align-items-center gap-3">
                             <div
-                                className="fw-bold"
-                                style={{ color: 'var(--bs-dark)', fontSize: "clamp(1.5rem, 4vw, 3rem)" }}
+                                className="fw"
+                                style={{ fontFamily: 'Quicksand, sans-serif', color: 'var(--bs-dark)', fontSize: "clamp(1.5rem, 4vw, 3rem)" }}
                             >
                                 Desenvolvedora
                             </div>
                             <span
-                                style={{ color: 'var(--bs-primary)', fontSize: "clamp(1.5rem, 4vw, 3rem)" }}
+                                style={{ fontFamily: 'Quicksand, sans-serif', color: 'var(--bs-primary)', fontSize: "clamp(1.5rem, 4vw, 3rem)" }}
                             >
                                 <Typewriter
                                     options={{
@@ -69,38 +69,45 @@ export const Header = () => {
                             </span>
                         </div>
                         <div className="header-element mb-3">
-                            <p className="lead" style={{
-                                color: 'var(--bs-dark)', 
-                                fontSize: "clamp(1rem, 2.5vw, 1.2rem)",
-                                wordWrap: 'break-word',  
-                                maxWidth: '35rem',  
+                        <p className="lead" style={{
+                            color: 'var(--bs-dark)', 
+                            fontSize: "clamp(1rem, 2.5vw, 1.2rem)",
+                            wordWrap: 'break-word',  
+                            maxWidth: '35rem',  
+                            // fontFamily: 'Quicksand, sans-serif',
+                            // fontWeight: 600, // Peso para semi-bold
                             }}>
-                                Sou uma desenvolvedora Full-Stack especializada em Front-End,
-                                comprometida com a experiência do cliente.
+                                Desenvolvedora Full-Stack em Java e JavaScript, criando soluções escaláveis e focadas na experiência do cliente.
                             </p>
                         </div>
                         <div className="header-element">
-                            <button className="btn" style={{
-                                marginTop: '2rem',
-                                color: 'var(--bs-primary)',  
-                                border: '1px solid var(--bs-primary)',  
-                                fontSize: 'clamp(1rem, 2.5vw, 1rem)',  
-                                padding: '0.75rem 1.5rem',  
-                                borderRadius: '0.3rem',  
-                                backgroundColor: 'transparent',  
-                                textDecoration: 'none', 
-                                transition: 'all 0.3s ease', 
-                            }}
-                            onMouseEnter={(e) => {
-                                e.target.style.backgroundColor = '#FBD2D2'; 
-                                e.target.style.color = 'var(--bs-primary)';  
-                            }}
-                            onMouseLeave={(e) => {
-                                e.target.style.backgroundColor = 'transparent';  
-                                e.target.style.color = 'var(--bs-primary)';  
-                            }}>
+                            <a
+                                href={require('../assets/curriculum/CV - Sofia Sawczenko.pdf')}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn"
+                                style={{
+                                    marginTop: '2rem',
+                                    color: 'var(--bs-primary)',  
+                                    border: '1px solid var(--bs-primary)',  
+                                    fontSize: 'clamp(1rem, 2.5vw, 1rem)',  
+                                    padding: '0.5rem 0.8rem',  
+                                    borderRadius: '0.3rem',  
+                                    backgroundColor: 'transparent',  
+                                    textDecoration: 'none', 
+                                    transition: 'all 0.3s ease', 
+                                }}
+                                onMouseEnter={(e) => {
+                                    e.target.style.backgroundColor = '#FBD2D2'; 
+                                    e.target.style.color = 'var(--bs-primary)';  
+                                }}
+                                onMouseLeave={(e) => {
+                                    e.target.style.backgroundColor = 'transparent';  
+                                    e.target.style.color = 'var(--bs-primary)';  
+                                }}
+                            >
                                 Curriculum Vitae
-                            </button>
+                            </a>
                         </div>
                     </div>
                 )}
