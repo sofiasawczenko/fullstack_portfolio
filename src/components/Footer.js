@@ -8,7 +8,7 @@ export const Footer = () => {
             <GlobalStyle /> 
             <footer
                 className="text-center py-4 mt-5 footer-mobile"
-                style={{ backgroundColor: 'var(--bs-footer-bg)' }}
+                // style={{ backgroundColor: 'var(--bs-footer-bg)' }}
             >
                 <Container>
 

@@ -5,7 +5,7 @@ import ScrollReveal from 'scrollreveal';
 
 export const Project = () => {
     const [selectedCategory, setSelectedCategory] = useState('all');
-    const [visibleProjects, setVisibleProjects] = useState(6);
+    const [visibleProjects, setVisibleProjects] = useState(3);
     const [showDropdown, setShowDropdown] = useState(false);
 
     const projects = [
@@ -97,9 +97,9 @@ export const Project = () => {
         ? projects
         : projects.filter((project) => project.category === selectedCategory);
 
-    const handleShowMore = () => {
-        setVisibleProjects((prevVisible) => prevVisible + 6);
-    };
+        const handleShowMore = () => {
+            setVisibleProjects((prevVisible) => prevVisible + 3); // Incrementa 3 projetos ao clicar em "Ver Mais"
+        };
 
     useEffect(() => {
         ScrollReveal().reveal('.project-card', {
