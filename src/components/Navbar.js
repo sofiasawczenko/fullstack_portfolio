@@ -78,14 +78,14 @@ export const Navbar = () => {
                         <li className="nav-item">
                             <a className="nav-link" href="#experiences">Experiências</a>
                         </li> */}
-                        <li className="nav-item">
-                            <a className="nav-link" href="#experience">Experiência</a>
-                        </li>
-                         <li className="nav-item">
-                            <a className="nav-link" href="#projects">Projetos</a>
+                        <li style={{ opacity: 1 }} className="nav-item">
+                            <a style={{ opacity: 1 }} className="nav-link" href="#experience">Experiência</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#contact">Contato</a>
+                            <a style={{ opacity: 1 }} className="nav-link" href="#projects">Projetos</a>
+                        </li>
+                        <li className="nav-item">
+                            <a style={{ opacity: 1 }} className="nav-link" href="#contact">Contato</a>
                         </li>
                     </ul>
                 </div>
