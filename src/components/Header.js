@@ -82,7 +82,7 @@ export const Header = () => {
                         </div>
                         <div className="header-element">
                             <a
-                                href={require('../assets/curriculum/CV - Sofia Sawczenko.pdf')}
+                                href={require('../assets/curriculum/Portugues CV - Sofia Sawczenko.pdf')}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="btn"
