@@ -11,6 +11,7 @@ export const Experiences = () => {
             easing: 'ease-out',
             origin: 'top',
             opacity: 0,
+            reset: false,
         });
     }, []);
 
