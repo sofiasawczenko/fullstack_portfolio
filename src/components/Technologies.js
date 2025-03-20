@@ -3,16 +3,16 @@ import ScrollReveal from "scrollreveal";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const technologies = [
-    { name: "React.js", icon: "/images/checkblue.svg" },
-    { name: "Styled Components", icon: "/images/checkblue.svg" },
+    { name: "AWS", icon: "/images/checkblue.svg" },
+    { name: "Java", icon: "/images/checkblue.svg" },
     { name: "Javascript", icon: "/images/checkblue.svg" },
-    { name: "Tailwind CSS", icon: "/images/checkblue.svg" },
-    { name: "Bootstrap", icon: "/images/checkblue.svg" },
-    { name: "Java 21", icon: "/images/checkblue.svg" },
-    { name: "SQL", icon: "/images/checkblue.svg" },
-    { name: "Python", icon: "/images/checkblue.svg" },
-    { name: "Figma", icon: "/images/checkblue.svg" },
+    { name: "Python 3", icon: "/images/checkblue.svg" },
+    { name: "mySQL", icon: "/images/checkblue.svg" },
+    { name: "Data Bricks", icon: "/images/checkblue.svg" },
     { name: "Git", icon: "/images/checkblue.svg" },
+    { name: "Rest API", icon: "/images/checkblue.svg" },
+    { name: "Teste Automatizado", icon: "/images/checkblue.svg" },
+    { name: "Prototipação", icon: "/images/checkblue.svg" },
 ];
 
 export const Technologies = () => {

@@ -77,7 +77,7 @@ export const Header = () => {
                             // fontFamily: 'Quicksand, sans-serif',
                             // fontWeight: 600, // Peso para semi-bold
                             }}>
-                                Desenvolvedora Full-Stack em Java e JavaScript, criando soluções escaláveis e focadas na experiência do cliente.
+                                Apaixonada por tecnologia e inovação, sempre busquei transformar desafios em soluções criativas, simples e com foco na resolução problema.
                             </p>
                         </div>
                         <div className="header-element">

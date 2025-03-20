@@ -49,7 +49,7 @@ export const Footer = () => {
                     <Row className="justify-content-center mt-3">
                         <Col xs="auto">
                             <p className="mb-0" style={{ fontSize: '1rem' }}>
-                                &copy; 2024 | Sofia Sawczenko
+                                &copy; 2025 | Sofia Sawczenko
                             </p>
                         </Col>
                     </Row>
